@@ -55,12 +55,12 @@ app.get("/", (req, res) => {
 });
 
 //? LISTNEING TO SERVER
-app.listen(process.env.PORT, async () => {
+app.listen(3001, async () => {
   try {
     await connection;
     console.log("Connected to DB");
   } catch (err) {
     console.log("Error connecting to DB");
   }
-  console.log(`Server is Rocking on port ${process.env.PORT}`);
+  console.log(`Server is Rocking on port ${3001}`);
 });
