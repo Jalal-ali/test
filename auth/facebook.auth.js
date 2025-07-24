@@ -10,9 +10,9 @@ passport.deserializeUser(function (user, done) {
 });
 
 passport.use(new FacebookStrategy({
-    clientID: process.env.FACEBOOK_CLIENT_ID,
-    clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-    callbackURL: "https://my-cal-com-backend.vercel.app/facebook/auth/callback",
+    clientID:"285629337150-1r0qe4cspfjd6n8d5onbtnouvejbkbcd.apps.googleusercontent.com",
+    clientSecret: "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",
+    callbackURL: "https://test-one-delta-84.vercel.app/google/callback",
     profileFields: ["email", "displayName"]
 }, (accessToken, refrestToken, profile, done) => {
     // console.log(profile);//! -------> Consoling profile in server
